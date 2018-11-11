@@ -1,0 +1,4 @@
+echo 'from flask import Flask\napp = Flask(__name__)\n\n@app.route("/")\ndef hello_world():\n\treturn "<h1>Hello, World</h1>"' > $HOME/hello.py && chmod 755 $HOME/hello.py && \
+docker run -dt --name Abathur -p 3000:3000 -v $HOME:/root python:2-slim && \
+docker exec Abathur pip install Flask && \
+docker exec --env FLASK_APP=/root/hello.py Abathur flask run --host=0.0.0.0 --port=3000
