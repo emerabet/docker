@@ -15,3 +15,5 @@ EXPOSE 30033
 EXPOSE 10011
 
 CMD ["sh", "ts3server_minimal_runscript.sh"]
+
+# docker run --name ts42 -d -p 9987:9987/udp -p 30033:30033 -p 10011:10011 teamspeak42
