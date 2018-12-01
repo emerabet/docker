@@ -1,1 +1,1 @@
-docker logs -follow spawning-pool
+docker logs --follow spawning-pool
