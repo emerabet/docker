@@ -1,0 +1,1 @@
+<?php echo 'Voici un phpinfo:'; phpinfo(); ?>
